@@ -1,0 +1,147 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #f5f6fa;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #2d3436;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h1 {
+    font-size: 20px;
+}
+
+.logo-img {
+    width: 100px;
+    height: 35px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Konten utama */
+.content {
+    padding: 30px;
+}
+
+.content h2 {
+    margin-bottom: 15px;
+    color: #2d3436;
+}
+
+/* Tabel data */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.data-table th, .data-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.data-table th {
+    background-color: #00b894;
+    color: #fff;
+}
+
+.data-table tr:hover {
+    background-color: #f1f2f6;
+}
+
+/* Status label */
+.status {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.85em;
+    color: #fff;
+}
+
+.status.pending {
+    background-color: #fdcb6e;
+    color: #000;
+}
+
+.status.cooking {
+    background-color: #0984e3;
+}
+
+.status.done {
+    background-color: #00b894;
+}
+
+.status.cancelled {
+    background-color: #d63031;
+}
+
+/* Tombol */
+.btn {
+    border: none;
+    padding: 7px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 0.9em;
+    margin-right: 5px;
+}
+
+.btn.done {
+    background-color: #00b894;
+}
+
+.btn.cancel {
+    background-color: #d63031;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #2d3436;
+    color: #dfe6e9;
+    font-size: 0.9em;
+    margin-top: 30px;
+}

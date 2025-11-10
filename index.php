@@ -1,7 +1,9 @@
 <?php
 require_once 'class/Drinks.php';
+require_once 'class/Foods.php';
 
 $Drinks = new Drinks();
+$Foods = new Foods();
 ?>
 
 <!DOCTYPE html>
@@ -11,56 +13,18 @@ $Drinks = new Drinks();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Dapur - Admin</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
-    <header class="navbar">
-        <div class="logo">
-            <img src="assets/logo.png" alt="Logo" class="logo-img">
-            <h1>Panel Dapur</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Pesanan</a></li>
-                <li><a href="#">Makanan</a></li>
-                <li><a href="#">Minuman</a></li>
-                <li><a href="#">Meja</a></li>
-                <li><a href="#">Member</a></li>
-            </ul>
-        </nav>
-    </header>
+    <?php include 'view/HeaderView.php'; ?>
 
     <main class="content">
-        <h2>Daftar Pesanan</h2>
-        <thead>
-            <tr>
-                <th>No</th>
-                <th>Nomor Meja</th>
-                <th>Nama Member</th>
-                <th>Pesanan</th>
-                <th>Total</th>
-                <th>Status</th>
-                <th>Aksi</th>
-            </tr>
-        </thead>
-        <tbody>
-            <table class="data-table"></table>
-            <?php foreach ($Drinks->getAllDrinks() as $b): ?>
-                <tr>
-                    <td><?= $b['id'] ?></td>
-                    <td><?= $b['drink_name'] ?></td>
-                    <td><?= $b['harga'] ?></td>
-                    <td><?= $b['stok'] ?></td>
-                </tr>
-            <?php endforeach; ?>
-        </tbody>
-        </table>
+        <?php include 'view/DrinksView.php'; ?>
+        <?php include 'view/FoodsView.php'; ?>
     </main>
 
-    <footer>
-        <p>© 2025 Sky Emperor Dapur. Semua hak dilindungi.</p>
-    </footer>
+    <?php include 'view/FooterView.php'; ?>
 </body>
 
 </html>
