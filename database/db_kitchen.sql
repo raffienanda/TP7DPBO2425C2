@@ -39,6 +39,7 @@ CREATE TABLE orders (
 ); 
 
 INSERT INTO foods (food_name, harga, stok) VALUES
+('-', 0, 0),
 ('Indomie Goreng', 9000, 40),
 ('Indomie Rebus', 9000, 40),
 ('Nasi Goreng', 18000, 15),
@@ -47,6 +48,7 @@ INSERT INTO foods (food_name, harga, stok) VALUES
 ('Kentang Sosis', 12000, 20);
 
 INSERT INTO drinks (drink_name, harga, stok) VALUES
+('-', 0, 0),
 ('Nutrisari', 5000, 12),
 ('Milo', 5000, 12),
 ('Air Mineral', 4000, 48),

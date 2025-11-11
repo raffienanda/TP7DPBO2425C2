@@ -5,7 +5,12 @@
     </div>
     <nav>
         <ul>
-            <li><a href="#"></a></li>
+            <li><a href="index.php?page=dashboard">Dashboard</a></li>
+            <li><a href="index.php?page=orders">Pesanan</a></li>
+            <li><a href="index.php?page=foods">Makanan</a></li>
+            <li><a href="index.php?page=drinks">Minuman</a></li>
+            <li><a href="index.php?page=tables">Meja</a></li>
+            <li><a href="index.php?page=members">Member</a></li>
         </ul>
     </nav>
 </header>

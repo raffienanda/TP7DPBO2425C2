@@ -1,3 +1,3 @@
 <footer>
-    <p>© 2025 Sky Emperor Dapur. Semua hak dilindungi.</p>
+    <p>© 2025 Sky Emperor. Semua hak dilindungi.</p>
 </footer>
